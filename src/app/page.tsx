@@ -16,7 +16,7 @@ const Home: React.FC = () => {
   const generateHaiku = async () => {
     if (theme) {
       const res = await axios({
-        url: 'http://localhost:3000/api/haiku',
+        url: '/api/haiku',
         method: 'post',
         data: {
           theme,
